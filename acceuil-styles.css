@@ -1,31 +1,50 @@
 .header {
-    background-image: url('Image/250gto.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+   
+    background: no-repeat url('Image/250gto.png');
+    background-position: top center;
+    background-size: 80%;
 }
 
+.head-line{
+    width: 80%;
+    height: 20px;
+    margin:auto;
+    background: rgb(141,17,8);
+}
 
 body {
     padding: 0px;
     margin: 0px;
-    background: rgb(212, 212, 208);
+    background: rgb(255, 255, 255);
 }
 
 
 .navbar {
       margin-bottom: 0;
       border-radius: 0;
+    background-color: rgb(255,255,255);
+    border: none;
+    width:80%;
+    margin-left:10%;
+    
     }
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0px;
-    top: 0px;
-    background-color: rgba(0, 0, 0, 0.4);
+.navbar-nav{
+    margin-top=23px;
+  padding: 0px 0px;
+}
+.nav-link:hover{
+    color: rgba(141,17,8,0.4);
 }
 
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+    line-height: 27px;
+  }
+}
 
 .description {
     left: 50%;
@@ -74,7 +93,7 @@ opacity: 0.7;
 }
 
 .categ:hover{
-    background: rgb(210, 255, 166);
+    background:rgba(141,17,8,0.4);
 }
 
 .categ a{
@@ -101,7 +120,7 @@ opacity: 0.7;
 
 .line span{
     display: block;
-    background-color: green;
+    background-color: rgb(141,17,8);
     width: 150px;
     height: 3px;
     margin:auto;
@@ -132,14 +151,23 @@ opacity: 0.7;
     -webkit-align-items: center;
     align-items: center;
   }
-  .swiper-button-next{
-      color:black;
+
+    .swiper-button-next{
+      color:rgb(141,17,8);
+        border-color: color:rgb(141,17,8); !important;
     }
     .swiper-button-next:hover{
-        color:gray;
+        color:rgba(141,17,8,0.3);
+    }
+    .swiper-button-prev{
+      color:rgb(141,17,8);
+    }
+    .swiper-button-prev:hover{
+        color:rgba(141,17,8,0.3);
     }
 .swiper-wrapper{
-    margin: 4em;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
 

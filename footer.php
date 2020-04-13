@@ -16,7 +16,7 @@
                     <a><img src="Image/in.png" height="35" weight="35"/></a>
                     <a><img src="Image/facebook.png" height="35" weight="35"/></a>
                     <br><br><br>
-                    <a><img src="Image/facebook.png" height="100" weight="100"/></a>
+                    <a><img src="Image/logoebayece.jpg" height="100" weight="100"/></a>
                 </div>
                 
                  <div class="col-md-4">

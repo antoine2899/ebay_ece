@@ -16,25 +16,24 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <script type="text/javascript">
       $(document).ready(function () {
-      $('.header').height($(window).height());
+      $('.header').height(550);
     });
     
   </script>
   <script src="js/accueil.js"></script>
 
-
 </head>
 
 <body>
-    
+  
+    <div class="head-line"></div>
     <?php include('nav.php');?>
 
+
+    
   <header class="header container-fluid">
-        <div class="overlay"></div>
-        <div class="description">
-            <h1>EBAY ECE PARIS</h1>
-        </div>
-   </header>
+      
+    </header>
   <section class="sections about">
     <div class="container">
       <div class="section-header text-center">
