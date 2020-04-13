@@ -26,30 +26,9 @@
 </head>
 
 <body>
+    
+    <?php include('nav.php');?>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Logo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav> 
   <header class="header container-fluid">
         <div class="overlay"></div>
         <div class="description">
@@ -63,10 +42,6 @@
         <div class="line"><span></span></div>
       </div>
     </div>
-
-  
-   
-    
   </section>
 
   <div class="container features">
@@ -138,6 +113,7 @@
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
+      </div>
 </section>
     
     
@@ -163,53 +139,7 @@
 
     </div>
     
-   <footer class="footer">
-        <div class="container features">
-            
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <h6 class="text-uppercase font-weight-bold">Informations</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
-                </div>
-                
-                <div class="col-md-4">
-                    <h6 class="text-uppercase font-weight-bold">Follow us</h6>
-                    <a><img src="Image/insta.png" height="35" weight="35"/></a>
-                    <a><img src="Image/in.png" height="35" weight="35"/></a>
-                    <a><img src="Image/facebook.png" height="35" weight="35"/></a>
-                    <br><br><br>
-                    <a><img src="Image/facebook.png" height="100" weight="100"/></a>
-                </div>
-                
-                 <div class="col-md-4">
-                <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Votre nom:" name="">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Courriel:" name="email">
-                        </div>
-
-                        <div class="form-group">
-                            <textarea class="form-control" rows="2">Vos commentaires</textarea>
-                        </div>
-
-                        <input type="submit" class="btn btn-secondary btn-block" value="Envoyer" name="">
-                    </div>
-
-                </div>
-                
-            </div>
-            
-            <br><br>
-            
-            
-            <div class="copyright text-center">&copy; 2020 Copyright | Droit d'auteur: EbayEce.fr</div>
-       </div>
-    </footer>
+   <?php include('footer.php');?>
     
     <div id="scrollUp">
         <a href="#top"><img src="Image/top.png" height="50px" weight="50px"/></a>
