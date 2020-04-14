@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <script type="text/javascript">
       $(document).ready(function () {
-      $('.header').height(550);
+      $('.header').height($(window).width()*0.35);
     });
     
   </script>
