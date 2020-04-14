@@ -13,45 +13,75 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
 
-      <link rel="stylesheet" type="text/css" href="acceuil-styles.css">
+      
       <link rel="stylesheet" type="text/css" href="log.css">
    
   </head>
   <body>
-      
-   
-   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalLong">
   Launch demo modal
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Please Log in</h5>
-        
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-log-tab" data-toggle="pill" href="#pills-log" role="tab" aria-controls="pills-log" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">register</a>
+          </li>
+        </ul>
       </div>
-      <div class="modal-body">
-        
-                <input type="email" class="form-control" placeholder="Votre Email:" name="email">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-log" role="tabpanel" aria-labelledby="pills-log-tab">
+          <div class="modal-body">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email :" name="email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Mot de passe :" name="mdp">
+            </div>
+            <button type="button" class="btn btn-info">Log in</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
 
-
-                <input type="password" class="form-control" placeholder="Mot de passe:" name="mdp">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Retour</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Connection</button>
-      </div>
+        </div>
+        <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+          <div class="modal-body">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nom :" name="name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Prénom :" name="surname">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email :" name="email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Mot de passe :" name="mdp">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Confirmer :" name="mdpc">
+            </div>
+            <button type="button" class="btn btn-info">Register</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div> 
     </div>
   </div>
 </div>
-    
-    
-    <div id="scrollUp">
-        <a href="#top"><img src="Image/top.png" height="50px" weight="50px"/></a>
-    </div>
-    
-  </body>
+
+</body>
 </html>
+
+
