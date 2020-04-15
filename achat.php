@@ -52,7 +52,7 @@
         <?php include('nav-filter.php');?>
         <!-- Body -->
 
-        <div class="container mt-5">
+        <div class="ml-3 mr-3 mt-5">
           <div class="row justify-content-center">
               <?php
 
@@ -61,10 +61,23 @@
                 $pages = $totalItems / $itemPerPage;
                 $imgSrc = "Image/VIP.jpg";
                 $imgAlt = "Objet VIP";
-
+                $imgTitle = "ROLEYYYYY";
+                $imgDescription ="Some quick example text to build on the card title and make up the bulk of the cards content.";
+                $imgPrice ="200000€";
+                $refPage ="";
                 for ($i = 1; $i <= 20; $i++) {
-                    echo '<div class="col-3 mt-5 category">
-                    <img src="' . $imgSrc . '" alt="' . $imgAlt . '" class="img-fluid" >
+                    echo '<div class="card col-12 col-sm-6 col-md-4 col-xl-3 mb-3 products" >
+                    <img src="' . $imgSrc .'" class="card-img-top img-responsive" alt="'. $imgAlt .'">
+                    <div class="card-body product-body">
+                        <h3 class="card-title">'. $imgTitle .'</h3>
+                        <p class="text-left card-subtitle text-muted text-truncate" style="margin-left:4%;margin-right:4%;height-max:10px;">'. $imgDescription .'</p>
+                        <h3 class="card-title card-price">'. $imgPrice .'</h§3>
+                        <div class="buy" style="height:10%;">
+                            <a id="object1" href="'. $refPage .'" class="btn ecebay" style="float:right; margin-bottom:4%; margin-right:4%;">Voir</a>
+                            <a id="object1" href="#" class="btn ecebay-outline" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
+                            
+                        </div>
+                     </div>
                 </div>';
                 }
                 
@@ -73,6 +86,18 @@
             
           </div>
         </div>
+
+         <!-- Add Pagination page -->
+
+         <ul class="pagination justify-content-center mt-5">
+            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Previous</a></li>
+            <?php
+                for ($i = 1; $i <= $pages; $i++) {
+                    echo '<li class="page-item"><a class="ecebay-outline page-link" style="margin-left: 2px;"href="javascript:void(0);">' . $i . '</a></li>';
+                }
+            ?>
+            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);" style="margin-left: 2px;">Next</a></li>
+        </ul>
         
         <!-- Swiper -->
         <section class="products">
@@ -97,8 +122,8 @@
                                 <p class="text-left card-subtitle text-muted text-truncate" style="margin-left:4%;margin-right:4%;height-max:10px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <h3 class="card-title card-price">2000€</h3>
                                 <div class="buy" style="height:10%;">
-                                    <a id="object1" href="#" class="btn btn-danger" style="float:right; margin-bottom:4%; margin-right:4%;">Voir</a>
-                                    <a id="object1" href="#" class="btn btn-outline-danger" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
+                                    <a id="object1" href="#" class="btn ecebay" style="float:right; margin-bottom:4%; margin-right:4%;">Voir</a>
+                                    <a id="object1" href="#" class="btn ecebay-outline" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
                                     
                                 </div>
                              </div>
@@ -123,17 +148,7 @@
             </div>
         </section>
 
-        <!-- Add Pagination page -->
-
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Previous</a></li>
-            <?php
-                for ($i = 1; $i <= $pages; $i++) {
-                    echo '<li class="page-item"><a class="ecebay-outline page-link" style="margin-left: 2px;"href="javascript:void(0);">' . $i . '</a></li>';
-                }
-            ?>
-            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);" style="margin-left: 2px;">Next</a></li>
-        </ul>
+       
  
         <?php include('footer.php');?>
         
