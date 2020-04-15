@@ -26,7 +26,7 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content bg-dark">
       <div class="modal-header justify-content-center">
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
@@ -40,6 +40,7 @@
       <div class="tab-content" id="tab-tabContent">
         <div class="tab-pane fade show active" id="log" role="tabpanel" aria-labelledby="tab-log">
           <div class="modal-body">
+          <p class="text-center text-white"><ins>Connectez-Vous</ins></p>
             <div class="form-group">
               <input type="email" class="form-control" placeholder="Email :" name="email">
             </div>
@@ -56,6 +57,7 @@
         </div>
         <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="tab-register">
           <div class="modal-body">
+            <p class="text-center text-white"><ins>Inscrivez-Vous</ins></p>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Nom :" name="name">
             </div>
@@ -70,6 +72,22 @@
             </div>
             <div class="form-group">
               <input type="password" class="form-control" placeholder="Confirmer :" name="mdpc">
+            </div>
+            <p class="text-center text-white"><ins>Informations Personelles</ins></p>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Adresse Ligne 1 :" name="ad1">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Adresse Ligne 2 :" name="ad2">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Ville :" name="city">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Code Postal :" name="postcode">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Téléphone :" name="num">
             </div>
             <div class="row justify-content-md-center">
              <button type="button" class="btn btn-info btn-outline-danger justify-content-center">Inscription</button>
