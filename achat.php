@@ -139,10 +139,10 @@
             <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Previous</a></li>
             <?php
                 for ($i = 1; $i <= $pages; $i++) {
-                    echo '<li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">' . $i . '</a></li>';
+                    echo '<li class="page-item"><a class="ecebay-outline page-link" style="margin-left: 2px;"href="javascript:void(0);">' . $i . '</a></li>';
                 }
             ?>
-            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Next</a></li>
+            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);" style="margin-left: 2px;">Next</a></li>
         </ul>
  
         <?php include('footer.php');?>
