@@ -21,10 +21,10 @@
         <!-- Front Awesome altenative to Glyphicons-->
         <script src="https://kit.fontawesome.com/906c6df7d2.js" crossorigin="anonymous"></script>
         <!-- Our CSS -->
-        <link rel="stylesheet" type="text/css" href="acceuil-styles.css">
+        <link rel="stylesheet" type="text/css" href="achat.css">
         
         <!-- Our JavaScript -->
-        <script src="accueil.js"></script>
+        <script src="achat.js"></script>
     </head>
 
     <body>
@@ -38,31 +38,39 @@
         <header class="header container-fluid">
   
         </header>
-
+        
         <!-- Creation Categories -->
         <!-- Title -->
-        <section class="sections about">
+        <section class="sections about mt-3">
           <div class="container">
             <div class="section-header text-center">
-              <h2 class="section-title">Categories</h2>
+              <h2 class="section-title">Ferrailles</h2>
               <div class="line"><span></span></div>
             </div>
           </div>
         </section>
-
+        <?php include('nav-filter.php');?>
         <!-- Body -->
 
         <div class="container mt-5">
           <div class="row justify-content-center">
-            <div class="col-3 category">
-            <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
-            </div>
-            <div class="col-3 category">
-              <img src="Image/musee.jpg" alt="Bon pour Musée" class="img-fluid" >
-            </div>
-            <div class="col-3 category">
-            <img src="Image/VIP.jpg" alt="Objet VIP" class="img-fluid" >
-            </div>
+              <?php
+
+                $itemPerPage = 20;
+                $totalItems = 100;
+                $pages = $totalItems / $itemPerPage;
+                $imgSrc = "Image/VIP.jpg";
+                $imgAlt = "Objet VIP";
+
+                for ($i = 1; $i <= 20; $i++) {
+                    echo '<div class="col-3 mt-5 category">
+                    <img src="' . $imgSrc . '" alt="' . $imgAlt . '" class="img-fluid" >
+                </div>';
+                }
+                
+              
+              ?>
+            
           </div>
         </div>
         
@@ -124,23 +132,19 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </section>
-        
-        
-        <div class="history">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <h3 class="feature-title">Histoire</h3>
-                        <img src="images-TP/column1.jpg" class="img-fluid">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat
-                            ante
-                            luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <!-- Add Pagination page -->
+
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Previous</a></li>
+            <?php
+                for ($i = 1; $i <= $pages; $i++) {
+                    echo '<li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">' . $i . '</a></li>';
+                }
+            ?>
+            <li class="page-item"><a class="ecebay-outline page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+ 
         <?php include('footer.php');?>
         
         <div id="scrollUp">

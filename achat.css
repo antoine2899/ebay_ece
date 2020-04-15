@@ -165,3 +165,19 @@ div.swiper-button-prev{
 .products{
     background: #eeeeee;
 }
+
+/* Pagination */ /* Search */
+
+.ecebay-outline{
+    color: rgba(141,17,8);
+    background-color: #ffffff;
+    border-color: rgba(141,17,8);
+    border-radius: 5%;
+    margin-left: 2px;
+    transition-duration: 100ms;
+}
+
+.ecebay-outline:hover{
+    color: #ffffff;
+    background-color: rgba(141,17,8);
+}
