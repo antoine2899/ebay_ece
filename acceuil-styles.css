@@ -1,3 +1,5 @@
+@import url('https://fonts.googlepis.com/css?family=Poppins:400,500,700');
+
 /* config back ground*/
 .header {
    
@@ -7,6 +9,9 @@
     position:relative;
 }
 
+header button{
+    left:20%;
+}
 .head-line{
     width: 80%;
     height: 20px;
@@ -21,6 +26,13 @@ body {
     background: rgb(255, 255, 255);
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
 /* Navigation Bar */
 .navbar {
     padding-right: 12%;
@@ -32,6 +44,13 @@ body {
     color: rgba(141,17,8) !important;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+
+/* Categories */
+.category img{
+    height: 100%;
+    width: 100%;
 }
 
 

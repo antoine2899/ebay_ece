@@ -36,36 +36,46 @@
         
         <!-- Header -->
         <header class="header container-fluid">
-  
+            <button type="button" class="btn btn-outline-dark">En savoir plus</button>
         </header>
 
         <!-- Creation Categories -->
-        <!-- Title -->
-        <section class="sections about">
-          <div class="container">
-            <div class="section-header text-center">
-              <h2 class="section-title">Categories</h2>
-              <div class="line"><span></span></div>
-            </div>
-          </div>
-        </section>
+        <div class="categories">
+            <!-- Title -->
+            <section class="sections about">
+                <div class="container-fluid">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Categories</h2>
+                        <div class="line"><span></span></div>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Body -->
+            <!-- Body -->
 
-        <div class="container mt-5">
-          <div class="row justify-content-center">
-            <div class="col-3 category">
-            <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
+            <div class="container-fluid mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-3 mt-2 category">
+                        <a href="">
+                            <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
+                            <h5 class="display-5 text-center">Ferraille ou Trésor</h5>
+                        </a>
+                    </div>
+                    <div class="col-11 col-sm-3 mt-2 category">
+                        <a href="">
+                            <img src="Image/musee.jpg" alt="Bon pour Musée" class="img-fluid" >
+                            <h5 class="display-5 text-center">Bon pour le musée</h5>
+                        </a>
+                    </div>
+                    <div class="col-11 col-sm-3 mt-2 category">
+                        <a href="">
+                            <img src="Image/VIP.jpg" alt="Objet VIP" class="img-fluid" >
+                            <h5 class="display-5 text-center">Objets VIP</h5>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-3 category">
-              <img src="Image/musee.jpg" alt="Bon pour Musée" class="img-fluid" >
-            </div>
-            <div class="col-3 category">
-            <img src="Image/VIP.jpg" alt="Objet VIP" class="img-fluid" >
-            </div>
-          </div>
-        </div>
-        
+        </div>    
         <!-- Swiper -->
         <section class="products">
             <div class="swiper-container features">
