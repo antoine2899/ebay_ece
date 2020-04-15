@@ -75,13 +75,10 @@
                         <div class="buy" style="height:10%;">
                             <a id="object1" href="'. $refPage .'" class="btn ecebay" style="float:right; margin-bottom:4%; margin-right:4%;">Voir</a>
                             <a id="object1" href="#" class="btn ecebay-outline" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
-                            
                         </div>
                      </div>
                 </div>';
                 }
-                
-              
               ?>
             
           </div>
@@ -100,7 +97,7 @@
         </ul>
         
         <!-- Swiper -->
-        <section class="products">
+        <section class="swip-product">
             <div class="swiper-container features">
                 <section class="sections about">
                       <div class="container">
