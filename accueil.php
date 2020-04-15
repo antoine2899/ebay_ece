@@ -55,12 +55,12 @@
             <!-- Body -->
 
             <div class="container-fluid mt-5">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center categories">
                     <div class="col-11 col-sm-3 ">
                         <div class="category border border-danger p-2">
                             <a href="">
                                 <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
-                                <h5 class="display-5 text-center mt-2">Ferraille ou Trésor</h5>
+                                <h5 class="category-text text-center mt-2">Ferraille ou Trésor</h5>
                             </a>
                         </div>
                         </div>
@@ -103,22 +103,12 @@
                             <img src="Image/musee.jpg" class="card-img-top img-responsive" alt="musée">
                             <div class="card-body">
                                 <h3 class="card-title">Imprimante manuel</h3>
-                                <p class="card-text text-left" style="margin-left:4%;margin-right:4%;height-max:10%;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <h3 class="card-title">2000€</h3>
-                                <div class="buy col-12" style="height:10%;">
-                                    <a id="object1" href="#" class="btn btn-danger" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
-                                    <select id="quantity1" class="form-control" style="width:18%;float:right;margin-right:2%">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="3">4</option>
-                                        <option value="3">5</option>
-                                        <option value="3">6</option>
-                                        <option value="3">7</option>
-                                        <option value="3">8</option>
-                                        <option value="3">9</option>
-                                    </select>
-                                    <div class="card-text" style="float:right;margin-right:2%;margin-top:2%;">Quantité :</div>
+                                <p class="text-left card-subtitle text-muted text-truncate" style="margin-left:4%;margin-right:4%;height-max:10px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h3 class="card-title card-price">2000€</h3>
+                                <div class="buy" style="height:10%;">
+                                    <a id="object1" href="#" class="btn btn-danger" style="float:right; margin-bottom:4%; margin-right:4%;">Voir</a>
+                                    <a id="object1" href="#" class="btn btn-outline-danger" style="float:right; margin-bottom:4%; margin-right:4%;">Ajouter au pannier</a>
+                                    
                                 </div>
                              </div>
                         </div>

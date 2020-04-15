@@ -61,6 +61,9 @@ html, body{
     border-radius: 2%;
 }
 
+.category-text{
+    font-size: 3vw;
+}
 .category>a{
     text-decoration: none !important;
     color: #000000 !important;
@@ -76,6 +79,104 @@ html, body{
 .category:hover>a{
     color: #ffffff !important;
 } 
+
+/* Swiper */
+
+.swiper-container {
+    width: 80%;
+    height: 100%;
+    margin: 4em auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+div.swiper-button-next{
+    color:rgb(141,17,8);
+}
+.swiper-button-next:hover{
+    color:rgba(141,17,8,0.3);
+}
+div.swiper-button-prev{
+    color:rgb(141,17,8);
+}
+.swiper-button-prev:hover{
+    color:rgba(141,17,8,0.3);
+}
+.swiper-wrapper{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.swiper-pagination-bullet-active {
+    background:rgb(141,17,8) !important;
+}
+
+/* Card */
+
+.card-price{
+    margin-top: 1em;
+}
+/* Adapt screen*/
+
+@media screen and (min-width: 1140px) {
+    .category>a>h5 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .card>.card-body>.card-title{
+        font-size: 20px;
+    }
+    .card>.card-body>.card-subtitle, .buy>.btn{
+        font-size: 10px;
+    }
+
+    .buy>.btn{
+        margin-right: 0px !important;   
+    }
+}
+@media (max-width: 1650px) {
+    .card>.card-body>.card-title{
+        font-size: 20px;
+    }
+    .card>.card-body>.card-subtitle, .buy>.btn{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .category>a>h5 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .buy>.btn{
+        margin-right: 4% !important;   
+    }
+    .categories>div {
+        margin-top : 5px;
+        margin-bottom: 5px;
+    }
+}
+
+
 
 .description {
     left: 50%;
@@ -155,51 +256,7 @@ opacity: 0.7;
     position: relative;
 }
 
-.swiper-container {
-    width: 80%;
-    height: 100%;
-    margin: 4em auto;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
 
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-div.swiper-button-next{
-  color:rgb(141,17,8);
-}
-.swiper-button-next:hover{
-    color:rgba(141,17,8,0.3);
-}
-div.swiper-button-prev{
-  color:rgb(141,17,8);
-}
-.swiper-button-prev:hover{
-    color:rgba(141,17,8,0.3);
-}
-.swiper-wrapper{
-    margin-top: 4em;
-    margin-bottom: 4em;
-}
-.swiper-pagination-bullet-active {
-    
-    background:rgb(141,17,8) !important;
-  }
 
 .products{
     background: #eeeeee;
