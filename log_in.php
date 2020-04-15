@@ -72,7 +72,7 @@
               <input type="password" class="form-control" placeholder="Confirmer :" name="mdpc">
             </div>
             <div class="row justify-content-md-center">
-             <button type="button" class="btn btn-info btn-outline-danger justify-content-center">Register</button>
+             <button type="button" class="btn btn-info btn-outline-danger justify-content-center">Inscription</button>
             </div>
           </div>
           <div class="modal-footer">
