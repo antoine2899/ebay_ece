@@ -29,7 +29,6 @@
     </head>
 
     <body>
-    <div id="result"></div>
         <!-- Line (block) a the top -->
         <div class="head-line"></div>
         
@@ -57,23 +56,29 @@
 
             <div class="container-fluid mt-5">
                 <div class="row justify-content-center">
-                    <div class="col-11 col-sm-3 mt-2 category">
-                        <a href="">
-                            <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
-                            <h5 class="display-5 text-center">Ferraille ou Trésor</h5>
-                        </a>
+                    <div class="col-11 col-sm-3 ">
+                        <div class="category p-2">
+                            <a href="">
+                                <img src="Image/tresor.jpg" alt="Ferraille ou Trésor" class="img-fluid">
+                                <h5 class="display-5 text-center">Ferraille ou Trésor</h5>
+                            </a>
+                        </div>
+                        </div>
+                    <div class="col-11 col-sm-3 ">
+                        <div class="category p-2">
+                            <a href="#">
+                                <img src="Image/musee.jpg" alt="Bon pour Musée" class="img-fluid" >
+                                <h5 class="display-5 text-center">Bon pour le musée</h5>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-11 col-sm-3 mt-2 category">
-                        <a href="">
-                            <img src="Image/musee.jpg" alt="Bon pour Musée" class="img-fluid" >
-                            <h5 class="display-5 text-center">Bon pour le musée</h5>
-                        </a>
-                    </div>
-                    <div class="col-11 col-sm-3 mt-2 category">
-                        <a href="">
-                            <img src="Image/VIP.jpg" alt="Objet VIP" class="img-fluid" >
-                            <h5 class="display-5 text-center">Objets VIP</h5>
-                        </a>
+                    <div class="col-11 col-sm-3 ">
+                        <div class="category p-2">    
+                            <a href="">
+                                <img src="Image/VIP.jpg" alt="Objet VIP" class="img-fluid" >
+                                <h5>Objets VIP</h5>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

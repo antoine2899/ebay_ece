@@ -60,6 +60,25 @@ html, body{
     width: 100%;
 }
 
+.category>a{
+    text-decoration: none !important;
+    color: #000000 !important;
+
+}
+
+.category>a:hover{
+    color: #eeeeee !important;
+    background-color: rgba(141,17,8,0.4) !important;
+}
+
+
+.category{
+    transition-duration: 100ms;
+}
+.category:hover{
+    background-color: rgb(220,53,69) !important;
+}
+
 
 .description {
     left: 50%;
@@ -111,10 +130,7 @@ opacity: 0.7;
     background:rgba(141,17,8,0.4);
 }
 
-.categ a{
-    text-decoration: none !important;
-    color: rgba(20, 20, 20, 1) !important;
-}
+
 
 .features{
     margin: 4em auto;
