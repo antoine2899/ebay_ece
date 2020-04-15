@@ -10,9 +10,16 @@
 }
 
 header button{
-    left:20%;
+    margin-left:14.5%;
+    margin-top:22%;
 }
+
+header button:hover{
+    color:rgb(141,17,8) !important;
+}
+
 .head-line{
+
     width: 80%;
     height: 20px;
     margin:auto;

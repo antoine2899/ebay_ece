@@ -1,7 +1,9 @@
 $(document).ready(function () {
     $('.header').height($(window).width()*0.35);
-  });
-
+  })
+  $(window).on('resize', function () {
+    $('.header').height($(window).width()*0.35);
+});
   $(document).ready(function () {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 4,

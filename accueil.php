@@ -25,9 +25,11 @@
         
         <!-- Our JavaScript -->
         <script src="accueil.js"></script>
+        
     </head>
 
     <body>
+    <div id="result"></div>
         <!-- Line (block) a the top -->
         <div class="head-line"></div>
         
@@ -36,7 +38,7 @@
         
         <!-- Header -->
         <header class="header container-fluid">
-            <button type="button" class="btn btn-outline-dark">En savoir plus</button>
+            <a href=""><button type="button" class="btn btn-outline-light">En savoir plus</button></a>
         </header>
 
         <!-- Creation Categories -->
