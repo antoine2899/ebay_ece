@@ -35,7 +35,7 @@
                     nav.classList.add('navfix');
                 } else {
                     nav.classList.remove('navfix');
-}
+                }
 
 });
         </script>
@@ -99,6 +99,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+            <div class="row">
+                <button type="button" class="btn ecebay-outline ml-auto mr-4 col-1 mb-4">Tout Voir</button>
+            </div>
         </section>
 
         <!-- Swiper Bon pour le musé -->
@@ -146,6 +149,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
+            <div class="row">
+                <button type="button" class="btn ecebay-outline ml-auto mr-4 col-1 mb-4">Tout Voir</button>
+            </div>
         </section>
 
         <!-- Swiper Accessoire VIP -->
@@ -192,6 +198,9 @@
                 <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+            </div>
+            <div class="row">
+                <button type="button" class="btn ecebay-outline ml-auto mr-4 col-1 mb-4">Tout Voir</button>
             </div>
         </section>
 
